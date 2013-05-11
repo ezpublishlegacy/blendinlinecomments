@@ -8,9 +8,9 @@ no risk of the comments turning up on the page or in search results.
 
 This is an early proof of concept, but feel free to try it out and submit ideas or pull requests!
 
-* Note: * This extension is in a pre-alpha state. There are likely very many bugs.
+*Note:* This extension is in a pre-alpha state. There are likely very many bugs.
 
-* INSTALLATION *
+*INSTALLATION*
 
 #. Add the blendinlinecommments extension to the 'extensions' folder.
 #. Run sql/blend_inlinecomments.sql against your database. This will add the 'blend_inlinecomments' table.
