@@ -17,3 +17,5 @@ This is an early proof of concept, but feel free to try it out and submit ideas 
 #. Add 'blendinlinecomments' to the active extensions array.
 #. Clear all caches
 #. Edit the editor role (or whatever user role you're using) to add the 'inlinecomments/read' and 'inlinecomments/write' permissions as appropriate
+
+![screenshot](https://raw.github.com/blendinteractive/blendinlinecomments/master/doc/Screenshot.jpg)
