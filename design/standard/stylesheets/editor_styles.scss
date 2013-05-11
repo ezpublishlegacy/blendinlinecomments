@@ -1,0 +1,9 @@
+$highlight: #fff866;
+body { width: 620px; }
+
+span.ezoeItemCustomTag.inlinecomment { background-color: #ffe26e; }
+.comment-bubble { width: 150px; float: right; margin-right: -180px;
+  background: #fdf8c5; border: 1px solid #ffe26e; padding: 10px; border-radius: 4px;
+  .author { font-size: 85%; color: #888; text-transform: uppercase; }
+  .time { font-size: 80%; color: #888; }
+}
