@@ -7,8 +7,8 @@ class BlendInlineComment extends eZPersistentObject
     {
         return array(
             'fields' => array(
-                'id' => array('name' => 'id',
-                    'datatype' => 'integer',
+                'guid' => array('name' => 'guid',
+                    'datatype' => 'string',
                     'default' => 0,
                     'required' => true),
                 'language' => array('name' => 'language',
@@ -32,7 +32,7 @@ class BlendInlineComment extends eZPersistentObject
                     'default' => 0,
                     'required' => true),
                 'reply_to' => array('name' => 'replyTo',
-                    'datatype' => 'integer',
+                    'datatype' => 'string',
                     'default' => 0,
                     'required' => true),
                 'version' => array('name' => 'version',
@@ -44,9 +44,8 @@ class BlendInlineComment extends eZPersistentObject
                     'default' => '',
                     'required' => true),
             ),
-            'keys' => array('id'),
+            'keys' => array('guid'),
             'function_attributes' => array(),
-            'increment_key' => 'id',
             'class_name' => 'BlendInlineComment',
             'name' => 'blend_inlinecomment');
     }
@@ -59,7 +58,7 @@ class BlendInlineComment extends eZPersistentObject
      */
     static function fetch( $id )
     {
-        $cond = array( 'id' => $id );
+        $cond = array( 'guid' => $id );
         return eZPersistentObject::fetchObject( self::definition(), null, $cond );
     }
 

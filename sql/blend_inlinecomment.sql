@@ -1,4 +1,3 @@
-
 SET NAMES utf8;
 
 -- ----------------------------
@@ -6,7 +5,7 @@ SET NAMES utf8;
 -- ----------------------------
 DROP TABLE IF EXISTS `blend_inlinecomment`;
 CREATE TABLE `blend_inlinecomment` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `guid` varchar(60) NOT NULL,
   `user_id` int(10) DEFAULT NULL,
   `author` varchar(255) DEFAULT NULL,
   `contentobjectattribute_id` int(10) NOT NULL,
@@ -14,7 +13,7 @@ CREATE TABLE `blend_inlinecomment` (
   `comment` text,
   `language` varchar(8) NOT NULL,
   `added_at` int(10) NOT NULL,
-  `reply_to` int(10) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
+  `reply_to` varchar(60) DEFAULT NULL,
+  PRIMARY KEY (`guid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+COMMIT;

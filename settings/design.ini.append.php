@@ -10,4 +10,4 @@ JavaScriptList[]=inlinecomments.js
 [StylesheetSettings]
 BackendCSSFileList[]=inlinecommentbutton_ezoe.css
 
-EditorCSSFileList[]=editor_styles.css
+EditorCSSFileList[]=editor_styles_inlinecomment.css
